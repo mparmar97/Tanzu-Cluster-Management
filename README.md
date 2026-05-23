@@ -1,2 +1,5 @@
-# Tanzu-Cluster-Management
-This was a POC project using Vmware Tanzu  developd by using Node Js 
+Developed a proof-of-concept backend application using Node.js and Express.js to interact with VMware Tanzu cloud APIs for Kubernetes cluster management. The application acted as an API integration layer that allowed users to perform Tanzu-related operations such as generating authentication tokens, creating and attaching Kubernetes clusters, managing cluster groups, workspaces, namespaces, node pools, policies, roles, workloads, and inspection reports.
+
+The project focused on validating API connectivity between a Node.js application and VMware Tanzu services. I implemented RESTful endpoints, configured request routing, handled JSON-based API communication, and used Axios to call VMware cloud endpoints. The application also included authentication token generation using VMware Cloud access token APIs, where the system reads credential details and sends a request to VMware Cloud to obtain access tokens for further API calls.
+
+The backend was built using Express.js, Axios, Log4js, Node-SSH, Mocha/Chai testing, ESLint, and NYC code coverage tools. The package.json shows dependencies such as express, axios, log4js, node-ssh, and testing tools including mocha, chai, and nyc.
